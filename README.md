@@ -27,8 +27,8 @@ volumes:
   - /sys:/host/sys:ro
   - /:/rootfs:ro
 ```
-- cAdvisor container espose containers metrics.
-- Prometheus container gather exposed metrics and store it(by default for 200 hours).
+- cAdvisor container exposes containers metrics.
+- Prometheus container gathers exposed metrics and store it(by default for 200 hours).
 - Grafana container uses Prometheus as a data source for it's graphs.
 - Grfana and Prometheus are started in deploy.sh using docker-compose.exporters.yml, cAdvisor and Node exporter are started in deploy.sh using docker-compose.yml.
 ___
